@@ -1,26 +1,22 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Customer
 {
     private int customerId;
     private String customerName;
 
-    HashMap<Integer, ArrayList<Object>> customer = new HashMap<>();
-
-    public void addCustomer(int customerId, String customerName, double discount)
+    public int getCustomerId()
     {
-
+        return customerId;
     }
 
-    public void removeCustomer(int customerId)
+    public String getCustomerName()
     {
-
+        return customerName;
     }
 
-    public static void printAllCustomersList(Map<Integer,String> map)
+    public void displayCustomerDetails()
     {
-
+        // id name
     }
 }

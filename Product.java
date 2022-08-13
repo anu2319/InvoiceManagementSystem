@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Product
 {
@@ -9,20 +7,39 @@ public class Product
     private int quantity;
     private int price;
     private int totalPrice;
-    HashMap<Integer, ArrayList<Object>> productDetails = new HashMap<>();
 
-    public void addProduct(int productId, String productName, int price)
+    // getter methods for all members
+
+
+    public int getProductId()
     {
-
+        return productId;
     }
 
-    public void removeProduct(int productId)
+    public String getProductName()
     {
+        return productName;
+    }
 
+    public int getQuantity()
+    {
+        return quantity;
+    }
+
+    public int getPrice()
+    {
+        return price;
+    }
+
+    public int getTotalPrice()
+    {
+        return totalPrice;
     }
 
     public void displayProductDetails()
     {
-
+        // id name quantity price totalPrice
     }
+
+
 }
